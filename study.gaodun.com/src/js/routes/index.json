@@ -1,0 +1,42 @@
+[{
+    "AppId": 130555,
+    "Title": "登陆",
+    "NavigationId": 10000,
+    "ParentID": 0,
+    "Url": "/login",
+    "Path": "containers/Login",
+    "Iconurl": "",
+    "CreateTime": "2017-07-14 10:05:05",
+    "ChildNavigations": null,
+    "Level": 1
+},{
+    "AppId": 130555,
+    "Title": "首页",
+    "NavigationId": 10001,
+    "ParentID": 0,
+    "Url": "/index",
+    "Path": "containers/Home",
+    "Iconurl": "",
+    "CreateTime": "2017-07-14 10:05:05",
+    "ChildNavigations": null
+},{
+    "AppId": 130555,
+    "Title": "全部直播",
+    "NavigationId": 10002,
+    "ParentID": 0,
+    "Url": "/live",
+    "Path": "containers/LiveDate",
+    "Iconurl": "",
+    "CreateTime": "2017-07-14 10:05:05",
+    "ChildNavigations": null
+},{
+    "AppId": 130555,
+    "Title": "兴趣板块",
+    "NavigationId": 10003,
+    "ParentID": 0,
+    "Url": "/hobbies",
+    "Path": "containers/Hobbies",
+    "Iconurl": "",
+    "CreateTime": "2017-10-10 14:00:00",
+    "ChildNavigations": null
+}]

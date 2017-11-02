@@ -1,0 +1,31 @@
+{
+    "presets": [["es2015",{"loose":true,"modules": false}], "stage-0"],
+    "plugins": [
+        "syntax-dynamic-import",
+        "transform-runtime",
+        "syntax-export-extensions",
+        "babel-plugin-add-module-exports",
+        "react-html-attrs",
+        "transform-class-properties",
+        "transform-decorators-legacy",
+        "transform-es3-property-literals",
+        "transform-es3-member-expression-literals",
+        "transform-es2015-modules-amd",
+        "transform-vue-jsx",
+        ["component", [
+            {
+                "libraryName": "mint-ui",
+                "style": true
+            }
+            /*{
+                "libraryName": "element-ui",
+                "styleLibraryName": "theme-default"
+            }*/
+        ]]
+    ],
+    "compact": false,
+    "ignore": [
+        "jquery.js",
+        "jquery.min.js"
+    ]
+}

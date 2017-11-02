@@ -1,0 +1,81 @@
+.c-m-modal{
+    position: fixed;
+    right: -505px;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    z-index:1002;
+}
+.crm-car{
+    width:505px;
+    height: 170px;
+    background:url('../images/car.png') no-repeat;
+    animation: c-modal-level 10s linear forwards;
+}
+.crm-plane{
+    width:511px;
+    height: 170px;
+    background:url('../images/plane.png') no-repeat;
+    animation: c-modal-level 10s linear forwards;
+}
+.crm-balloon{
+    width:153px;
+    height: 498px;
+    background:url('../images/balloon.png') no-repeat;
+    animation: c-modal-vertical 20s linear forwards;
+}
+.crm-car .message-content{
+    position:absolute;
+    right:55px;
+    width:200px;
+    font-size:16px;
+    line-height:24px;
+    top:16px;
+    white-space:nowrap;;
+}
+.crm-plane .message-content {
+    position:absolute;
+    right:55px;
+    width:200px;
+    font-size:16px;
+    line-height:24px;
+    top:40px;
+    white-space:nowrap;;
+}
+.crm-balloon .message-content{
+    position:absolute;
+    right:53px;
+    width:50px;
+    height:210px;
+    font-size:16px;
+    line-height:24px;
+    bottom:50px;
+    white-space:nowrap;
+    writing-mode:tb-rl;
+}
+.crm-plane.c-m-modal{
+    top: 10px;
+}
+.message-content span{
+    color: #f0664b;
+    font-size:18px;
+}
+@keyframes c-modal-level {
+    0% {
+        /*opacity: 0;*/
+        transform: translate3d(-500px, 0%, 0)
+    }
+    100% {
+        transform: translate3d(-2500px, 0%, 0)
+    }
+}
+
+@keyframes c-modal-vertical {
+    0% {
+        /*opacity: 0;*/
+        transform: translate3d(-500px, 0px, 0)
+    }
+    100% {
+        transform: translate3d(-2000px, -2000px, 0)
+    }
+}

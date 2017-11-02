@@ -1,0 +1,2 @@
+/*! Gaodun modified this file at 2017-6-8 11:47:16 */
+webpackJsonp([1],{61:function(e,t,n){"use strict";function u(e){return e&&e.__esModule?e:{default:e}}var o=n(24),r=u(o),a=n(22),f=u(a),l=n(23),c=u(l),d=n(21),s=u(d);n(25);var i=new f.default;new r.default({store:s.default,render:function(e){return e(c.default)}}).$mount("#app"),i.get("/test/getJSON").then(function(e){console.log(e)})}},[61]);

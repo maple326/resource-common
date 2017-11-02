@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Let和Const</title>
+  <link rel="stylesheet" href="../normal.css">
+</head>
+<body>
+<h1>var VS let</h1>
+<ol>
+  <li>var没有块级作用域，定义以后在当前闭包中都可以访问，如果变量名重复，就会覆盖前面的变量名。</li>
+  <li>var是函数作用域。在整个函数中甚至是声明语句之前都是可用的。因为存在声明提升。</li>
+</ol>
+<hr>
+<ol>
+  <li>let是块级作用域。意思是let定义的变量的作用域是在它们的块内以及字块之中。</li>
+  <li>在ES6中，let将变量提升到代码块的顶部(不像ES5那样的函数顶部)</li>
+  <li>let存在"暂存死区"(指从代码开始直到变量被声明之间的区域)，死区中引用变量会导致ReferenceError</li>
+</ol>
+<hr>
+<h1>const</h1>
+<p>const和let唯一区别是const定义的是只读的常量，定以后不能再对其进行修改值。</p>
+<hr><br>
+</body>
+<script src="./let和const.js"></script>
+</html>

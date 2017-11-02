@@ -1,0 +1,1080 @@
+/*线索管理列表页自定义选择项*/
+.clues-setting-table {
+    .clues-setting {
+        margin-left: -10px;
+        border: 1px solid #edf1f7;
+        &>p {
+            height: 25px;
+            line-height: 25px;
+            background: #edf1f7;
+            padding-left: 10px;
+        }
+    }
+     .setting-foundation {
+            border-bottom: 1px solid #edf1f7;
+            margin-bottom: 10px;
+            p {
+                padding: 10px 0 0 10px
+            }
+            
+        }
+    .setting-select {
+        margin: 0 -10px 0 10px;
+        border: 1px solid #edf1f7;
+        &>p {
+            height: 25px;
+            padding-left: 10px;
+            line-height: 25px;
+            background: #edf1f7;
+        }
+        .setting-select-item {
+            padding-left: 10px;
+            i {
+                float: right;
+                padding-right: 10px;
+                color: #00b3e7;
+                font-size: 16px;
+                cursor: pointer;
+                display: none;
+            }
+            &:hover {
+                background: #edf7fa;
+            }
+            &:hover i {
+                display: block;
+            }
+        }
+        
+    }
+}
+
+
+
+/*线索管理*/
+.clues-search-tree {
+    position: relative;
+    display: inline-block;
+    .search-text {
+        min-width: -webkit-fill-available;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        outline: none;
+        padding: 0px 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: relative;
+        top: -5px;
+    }
+    .search-text::-webkit-input-placeholder {
+        color: #bfcbd9;
+    }
+    .el-tree.filter-tree.el-tree--highlight-current {
+        height: 300px;
+        overflow: auto;
+        font-size: 12px;
+    }
+    .search-tree {
+        font-size: 12px;
+        position: absolute;
+        left: 0;
+        top: 33px;
+        z-index: 5;
+        display: -webkit-inline-box;
+    }
+    @media screen and (max-width: 1275px) {
+        .search-tree  {
+            width: 175px;
+            font-size: 12px;
+            position: absolute;
+            left: 0px;
+            top: 36px;
+            height: 350px;
+            z-index: 5;
+            display: -webkit-inline-box;
+            overflow: auto;
+        }
+    }
+    .newUsers-tree {
+        width: 150px;
+        font-size: 12px;
+        position: absolute;
+        margin: 0 auto;
+        left: 0px;
+        top: 29px;
+        height: 350px;
+        z-index: 5;
+        display: -webkit-inline-box;
+        overflow: auto;
+    }
+}
+.clues-pagination {
+    padding-top: 18px;
+    text-align: right;
+}
+.cluesButton-icon {
+    width: 85px;
+    padding-left: 10px;
+    height: 28px;
+    border-radius: 4px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #49a1f6;
+    color: #49a1f6;
+    i {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        vertical-align: middle;
+    }
+}
+.addNewuserIcon {
+        width: 85px;
+        height: 28px;
+        padding-left: 10px;
+        padding-left: 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        outline: none;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #49a1f6;
+        color: #49a1f6;
+        margin-right: -4px;
+    i {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        vertical-align: middle;
+        background: url('../images/clues/addNewuser-icon.png')no-repeat;
+    }
+}
+.cluesMegerIcon {
+    background: url('../images/clues/cluesmeger-icon.png')no-repeat;
+}
+.cluesDistributionIcon {
+    background: url('../images/clues/cluesDistribution-icon.png')no-repeat;
+}
+.cluesImportIcon {
+    background: url('../images/clues/cluesImport-icon.png')no-repeat;
+}
+.cluesQueryIcon {
+    background: url('../images/clues/cluesQuery-icon.png')no-repeat;
+}
+.cluesRemovIcon {
+    background: url('../images/clues/cluesRemove-icon.png')no-repeat;
+}
+
+.cluesDistributionGray {
+    background: url('../images/clues/cluesDistribution-gray.png')no-repeat;
+}
+.cluesImportGray {
+    background: url('../images/clues/cluesImport-gray.png')no-repeat;
+}
+.cluesRemovgray {
+    background: url('../images/clues/cluesRemove-gray.png')no-repeat;
+}
+
+.ClueBatchButton-icon {    
+    left:0px;
+    top:0px;   
+    width: 90px;
+    height: 28px;
+    border-radius: 4px;
+    font-size: 12px; 
+    outline: none;
+    cursor: pointer;
+    background-color:#00b2e5;  
+    border: 1px solid #cde5fd; 
+    color:#FFFFFF; 
+    margin-right: 10px;
+  i {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        vertical-align: middle;
+    }
+}
+
+.batchSearchIcon {
+    background: url('../images/clues/batchclue.png')no-repeat;
+}
+.module-clues-content {
+    .clues-content-label{
+        overflow: hidden;
+        zoom:1;
+    }
+    .clues-bnt-item {
+        line-height: 39px;
+        float: left;        
+    }
+    .clues-search {
+        float: right;
+        z-index: 99;
+        .clues-button-search {
+            margin: 0 5px;
+        }
+        .el-icon-settings {
+            width: 25px;
+            height: 21px;
+            vertical-align: middle;
+            background: url('../images/clues/settings.png')no-repeat;
+        }
+        a { display: inline-block }
+        .clues-search-input {
+            position: relative;
+            z-index: 100;
+        }
+        .clues-manage-search-input {
+            width: 303px;
+            position: relative;
+            z-index: 100;
+            font-size: 12px;
+        }
+        .clues-search-select, .clues-search-selects{
+            width: 301px;
+            position: absolute;
+            z-index: 99;
+            border: 1px solid #ccc;
+            border-top: 0;
+            margin-top: -7px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #48576a;
+            background: #fff;
+            ul {
+                padding-top: 5px;
+            }
+            ul li {
+                height: 30px;
+                line-height: 30px;
+                padding: 0 8px;
+                cursor: pointer;
+                display: flex;
+                white-space: nowrap;
+                .search-type-text {
+                    float: right;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &:hover {
+                    background: #e4e8f1;
+                }
+            }
+            .search-type-name {
+                display: inline-block;
+                width: 55px;
+                padding-right: 5px;
+            }
+        }
+    }
+    .clues-table {
+        margin-top: 15px;
+    }
+    .clues-conditions-hide {display: none}
+    .clues-conditions {
+        display: inherit;
+        border: 1px solid #c2ccd8;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        .conditions-top {
+            font-size: 12px;
+            color: #656565;
+            .el-row {
+                margin-bottom: 10px;
+            }
+        }
+        .conditions-span-w {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+    }
+}
+.clues-collapse .el-icon-d-arrow-left {
+    color: #a4acb9;
+    transform: rotate(270deg);
+}
+.clues-collapse .collapse-icon-down {
+    color: #a4acb9;
+    transform: rotate(90deg);
+}
+.module-clues-collapse { // 显示更多
+        border-top: 1px solid #c2ccd8;
+        margin: 0 -10px -10px -10px;
+        text-align: center;
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        .clues-collapse {
+                .el-icon-d-arrow-left {
+                    color: #a4acb9;
+                    transform: rotate(270deg);
+                }
+                .collapse-icon-down {
+                    color: #a4acb9;
+                    transform: rotate(90deg);
+                }
+                span {
+                    color: #8e9bae;
+                    margin-left: 5px;
+                }
+            }
+        .clues-collapse-but{
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+    }
+        .conditions-bottom-show {
+        display: block;
+        font-size: 12px;
+        color: #656565;
+        border-top: 1px solid #c2ccd8;
+        padding-top: 10px;
+    }
+    .conditions-bottom-hide {
+        display: none;
+        font-size: 12px;
+        color: #8f9aac;
+        border-top: 1px solid #c2ccd8;
+        padding-top: 10px;
+        .el-row {
+            margin-bottom: 10px;
+        }
+    }
+.clues-kickpool-style {
+    color: rgb(74, 87, 104);
+    margin-top: 20px;
+    border: 1px dashed #8f9aac;
+    padding: 25px 20px;
+    border-radius: 5px;
+    .kickpool-modal-icon {
+        padding-left: 32px;
+        background: url('../images/kickpool-icon.png')no-repeat;
+    }
+}
+.clues-query-style {
+        text-align: center;
+        font-size: 12px;
+        padding: 30px 30px 0;
+    .clues-query-table {
+        text-align: center;
+        border: 1px solid #ccc;
+        color: #8f9aac;
+        margin: 5px 0;
+        .el-col-6 {
+            border-right: 1px solid #ccc;
+            padding: 5px;
+        }
+        .el-col-6:last-child {
+            border-right: 0;
+        }
+    }
+}
+.clues-shared-style {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px 0px 15px;
+    .clues-shared-table {
+        border: 0;
+        color: #8f9aac;
+        margin: 5px 0 8px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px dashed #ccc;
+        display: flex;
+    }
+    .clues-shared-list {
+        color: #8f9aac;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        height: auto;
+        display: flex;
+        .shared-item {
+            padding: 5px 0;
+            border-right: 1px solid #ccc;
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+        }
+        .shared-item:last-child {
+            border-right: 0;
+        }
+    }
+    .clues-shared-list:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+}
+/* 线索跟进 */
+.clues-wrap {
+    width: 100%;
+    height: 100%;
+}
+.clues-layout-right {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    z-index: 100;
+    width: 900px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.traacking-cover {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9;
+    left: 0px;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.fon-12 {
+    color: #5cb9e2;
+    font-size: 12px;
+}
+.clues-tracking-hide {
+    position: absolute;
+    left: -39px;
+    width: 39px;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+    background: #fafafa;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: bold;
+    box-shadow: -1px 3px 10px #ccc;    
+    a {
+        color: #4bb1de;
+    }
+}
+.clues-tracking-wrap {
+    box-shadow: -1px 3px 10px #ccc;
+    background: #fafafa;
+    padding-left: 10px;
+    height: 100%;
+    overflow: auto;
+    font-size: 14px;
+    .clues-tracking-head {
+        background: #fff;
+        color: #7c8188;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 13px;
+    }
+}
+  .tracking-relevance {
+        margin: 10px 0;
+        padding: 7px 13px 2px 13px;
+        font-size: 14px;
+        color: #5cb9e2;
+        background: #fff;
+        .add-server {
+            display: inline-flex;
+            ul{
+                position: relative;
+                left: 35px;
+                top: 3px;
+                overflow: hidden;
+                width: 390px;
+                height: 18px;
+                li {
+                    padding-left: 20px;
+                    display: inline-block;
+                    a {
+                        color: #5cb9e2;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .add-server-icon {
+            position: relative;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            text-align: right;
+            cursor: pointer;
+            a {
+                position: relative;
+                top: -1px;
+                i {
+                    display: inline-block;
+                    color: #fff;
+                    width: 15px;
+                    height: 15px;
+                    background: #2ca4d9;
+                    text-align: center;
+                    line-height: 13px;
+                    border-radius: 50%;
+                }
+            }
+            span {
+                vertical-align: middle;
+            }
+        }
+    }
+ .clues-tracking-tip {
+        position: absolute;
+        background-color: #FFFFFF;
+        border: #c7d1dd solid 1px;
+        box-shadow: 0px 0px 5px #c7d1dd;
+        border-radius: 3px;
+    }
+    .clues-tracking-status {
+        top: 40px;
+        z-index: 9;
+        left: -28px;
+        line-height: 34px;
+        text-align: center;
+        height: 34px;
+        width: 80px;
+        text-align: center;
+        span {
+            cursor: pointer;
+        }
+    }
+    .clues-tracking-addContact{
+        top: 40px;
+        z-index: 9;
+        right: -68px;
+        width: 300px;
+        padding: 15px 0;
+        .add-contact-lable {
+            color: #5d626a;
+            display: inline-block; 
+            width: 120px; 
+            text-align: right;
+        }
+    }
+    .clues-tracking-addContact:before, .clues-tracking-status:before{
+        box-sizing: content-box;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: -16px;;
+        right: 144px;
+        padding:0;
+        border-bottom:8px solid #FFFFFF;
+        border-top:8px solid transparent;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+        display: block;
+        content:'';
+        z-index: 12;
+    }
+    .clues-tracking-addContact:after, .clues-tracking-status:after{
+        box-sizing: content-box;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: -18px;;
+        right: 143px;
+        padding:0;
+        border-bottom:9px solid #c7d1dd;
+        border-top:9px solid transparent;
+        border-left:9px solid transparent;
+        border-right:9px solid transparent;
+        display: block;
+        content:'';
+        z-index:10
+    }
+    .clues-tracking-status:before {
+        right: 32px;
+    }
+    .clues-tracking-status:after {
+        right: 31px;
+    }
+.tracking-call-icon {
+    position: relative;
+}
+
+.tracking-tabs-todo-list {
+    width: 190px;
+    height: 80px;
+    margin-right: 30px;
+    float: left;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    overflow: hidden;
+    zoom: 1;
+    cursor: pointer;
+    .tracking-todo-list-title {
+        background: #7068b5;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .tracking-todo-list-content {
+        padding: 8px 10px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #666;
+    }
+}
+.tracking-phone-icon {
+    background: url('../images/phone.png') right no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+    
+}
+.tracking-left {
+    float: left;
+}
+.tracking-right {
+    width: 80px;
+    height:800px;
+    border:1px solid red;
+    float: right;
+}
+.trancking-personal {
+    text-align: center;
+    .personal-photo {
+        width: 70px;    
+        height: 70px;
+        margin: 0 auto;
+        img {
+            width: 70px;    
+            height: 70px;
+            border-radius: 50%;
+            display: block;
+        }
+    }
+}
+.personal-name {
+       margin: 6px 0 10px 0;
+    i {
+        width: 15px;
+        height: 17px;
+        vertical-align: sub;
+        display: inline-block;
+        
+    }
+    .sales-promotion-activity {
+        font-size: 12px;
+        background: #fdf8ed;
+        border-radius: 3px;
+        color: #f4cd6a;
+        border: 1px solid #faeccc;
+        padding: 3px 5px;
+        margin-left: 10px;
+    }
+}
+ .personal-time-No {
+    font-size: 12px;
+    color: #8f9aac;
+    i {
+        display: inline-block;
+        height: 11px;
+        width: 1px;
+        background: #8f9aac;
+        vertical-align: middle;
+    }
+}
+.personal-gender-man {
+    background: url('../images/home/gender-men.png')no-repeat;
+}
+.personal-gender-woman {
+    background: url('../images/home/gender-women.png')no-repeat;
+}
+.el-col-form {
+    padding-right: 25px;
+    color: #8f9aac;
+    font-size: 14px;
+}
+.tracking-text-font {
+    font-size: 12px;
+    color: #414852;
+}
+.tracking-emergency-contact-conten {
+    border: 1px solid #ccc;
+    display: table;
+    margin-left: 35px;
+    height: 75px;
+    .el-row {
+        margin-top: 15px;
+        display: table-cell;
+        vertical-align: middle;       
+    }
+}
+.tracking-clues-information {
+    border-left: 4px solid #42aedf;
+    color: #414852;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.el-row-information-item {
+    color: #8f9aac;
+    font-size: 14px;
+}
+.tracking-newusers-contact {
+    margin-left: 35px;
+    font-size: 12px;
+    a {
+        padding: 5px;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        display: table-cell;
+        width: 65px;
+        text-align: center;
+    }
+    a:last-child {
+        border-left: 0;
+    }
+}
+.tracking-record-communication {
+    li {
+        position: relative;
+        top: 20px;
+        border-left: 1px solid #c6e5f2;
+         .communication-left {
+            display: inline-block;
+            font-size: 14px;
+            float: left;
+            position: relative;
+            top: -5px;
+            i {
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #42aedf;
+                position: absolute;
+                left: -4px;
+                top: -2px;
+            }
+        } 
+        .communication-right {
+            margin-left: 10px;
+            position: relative;
+            top: -19px;
+            margin-bottom: 5px;
+            padding: 5px;
+            background: #fff;
+            border-radius: 5px;
+            font-size: 12px;
+            div {
+                padding-bottom: 10px;
+                h5 {
+                    color:#414852;
+                }
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    color: #8f9aac;
+                }
+            }
+        }
+    }
+    li:last-child {
+    border-left: none;
+    }  
+}
+.contact-color {color: #42aedf}
+.tracking-text-font {color: #414852}
+.tracking-contacts-input {
+    width: 130px;
+    position: relative;
+    .el-input__inner {
+        padding-right: 24px;
+    }
+}
+.tracking-contacts-call-icon {
+    position: absolute;
+    right: 5px;
+    height: 21px;
+    line-height: 21px;
+    top: 8px;
+}
+/*线索跟进折叠记录列表*/
+.communication-tag {
+    background: #f09862;
+    padding: 5px;
+    margin: 0 -5px 5px -5px;
+}
+.clues-record-tracking .el-collapse-item__header__arrow.el-icon-arrow-right{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    transform: none!important;
+}
+.record-communication .el-collapse-item__header__arrow.el-icon-arrow-right {
+    background: url('../images/clues/communication-icon.png')no-repeat;
+}
+.record-callRecords .el-collapse-item__header__arrow.el-icon-arrow-right {
+    background: url('../images/clues/call-icon.png')no-repeat;
+}
+.record-audition .el-collapse-item__header__arrow.el-icon-arrow-right {
+    background: url('../images/clues/audition-icon.png')no-repeat;
+}
+.record-sign .el-collapse-item__header__arrow.el-icon-arrow-right {
+    background: url('../images/clues/registration-icon.png')no-repeat;
+}
+.record-recommended .el-collapse-item__header__arrow.el-icon-arrow-right {
+    background: url('../images/clues/recommend-icon.png')no-repeat;
+}
+.record-circulation .el-collapse-item__header__arrow.el-icon-arrow-right {
+    background: url('../images/clues/circulation-icon.png')no-repeat;
+}
+.record-communication.is-active>.el-collapse-item__header i {
+     background: url('../images/clues/communication-white.png')no-repeat;
+}
+.record-callRecords.is-active>.el-collapse-item__header i {
+    background: url('../images/clues/call-white.png')no-repeat;
+}
+.record-audition.is-active>.el-collapse-item__header i {
+    background: url('../images/clues/audition-white.png')no-repeat;
+}
+.record-sign.is-active>.el-collapse-item__header i {
+    background: url('../images/clues/registration-white.png')no-repeat;
+}
+.record-recommended.is-active>.el-collapse-item__header i{
+    background: url('../images/clues/recommend-white.png')no-repeat;
+}
+.record-circulation.is-active>.el-collapse-item__header i {
+    background: url('../images/clues/circulation-white.png')no-repeat;
+}
+.tracking-record-overflow .el-collapse-item__header .el-icon-arrow-right:before {
+    content: ''
+}
+
+/* 线索新增 */
+ .clues-newusers-table {
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        margin-left: 35px;
+        margin-right: 20px;
+        padding: 5px 15px;
+     .newuser-contact-table {
+        color: #949eaf;
+        font-size: 14px;
+        text-align: center;
+        margin-left: 15px;
+    }
+    .newusers-contact-input {
+        .el-form-item__content {
+            margin-left: 10px!important;
+        }
+    }
+    .newuser-add, .newuser-remove {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+    }
+    .newuser-add {
+        background: url('../images/add_icon.png')no-repeat;
+    }
+    .newuser-remove {
+        background: url('../images/remove_icon.png')no-repeat;
+        margin-left: 8px;
+    }
+}
+.contactHide {
+    display: none;
+}
+/*线索合并*/
+.merge-text {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fb0606;
+    line-height: 20px;
+}
+/*邀约试听*/
+.invitation-audition-form {
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 2px solid #cdd7e2;
+    .invitation-audition-hade-left {
+        font-size: 14px;
+        color: #666;
+    }
+    .invitation-audition-hade-right {
+        font-size: 12px;
+        color: #666;
+        text-align: right;
+    }
+}
+
+/*线索详情*/
+
+.clues-details-content {
+    .details-contact-content {
+        .details-contact {
+            margin: 0 15px 0 5px;
+            font-size: 14px;
+            color: #8d98a9;
+            border-radius: 15px;
+            -webkit-box-shadow: 0px 0px 8px #c7d1dd;
+            -moz-box-shadow: 0px 0px 8px #c7d1dd;
+            box-shadow: 0px 0px 8px #c7d1dd;
+            .details-contact-row {
+                height: 70px;
+                display: table;
+                width: 100%;
+                background: #fafafc;
+            .details-personal-user {
+                display: table-cell;
+                vertical-align: middle;
+            .details-personal {
+                .personal-photo {
+                        width: 60px;
+                        height: 60px;
+                        padding-bottom: 3px;
+                        margin-left: 28px;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 1px solid #8f9aac;
+                    }
+                }   
+            }
+        }
+    }
+        .details-contact-item {
+            text-align: left;
+            padding-left: 10px;
+                .details-contact-icon {
+                    padding-left: 18px;
+                    height: 20px;
+                    line-height: 17px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .phone-icon {
+                    background: url('../images/phone-icon.png')no-repeat;
+                }
+                .foreign-icon {
+                    background: url('../images/international-tel.png')no-repeat;
+                }
+                .weChat-icon {
+                    background: url('../images/weChat.png')no-repeat;
+                }
+                .address-icon {
+                    background: url('../images/address-icon.png')no-repeat;
+                }
+                .qq-icon {
+                    background: url('../images/qq.png')no-repeat;
+                }
+                .email-icon {
+                    background: url('../images/email.png')no-repeat;
+                }
+                .tracking-text-font {
+                    span {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+     
+    }
+}
+.details-contact-list {
+    margin-left: 30px;
+    display: flex;
+    margin-right: 30px;
+    font-size: 12px;
+    div {
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        .contact-item {
+            margin: 5px 5px;
+            padding-right: 5px;
+            border-right: 1px solid #ccc;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .contact-item:last-child {
+            border-right: 0;
+        }
+    }
+.contact-active {color: #42aedf}
+    i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+        margin-left: 15px;
+        cursor: pointer;
+        background: url('../images/add_icon.png')no-repeat;
+    }
+}
+ .details-emergency-contact-conten {
+        border: 1px solid #ccc;
+        font-size: 14px;
+        color: #8f9aac;
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 75px;
+    }
+.details-information-content {
+        margin: 20px 15px 0 5px;;
+        padding: 5px 0px 20px;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 0px 8px #c7d1dd;
+        -moz-box-shadow: 0px 0px 8px #c7d1dd;
+        box-shadow: 0px 0px 8px #c7d1dd;
+    .details-contact-information {
+        border-left: 4px solid #42aedf;
+        color: #414852;
+        font-size: 16px;
+        padding-left: 10px;
+        margin: 10px 0 20px 28px;
+    }
+    .details-basic {
+        padding-left: 42px;
+        border-right: 1px solid #ccc;
+    }
+    .details-basic:last-child {
+        border-right: 0;
+    }
+    .repeated-consulting {
+        width: 100%;
+        padding-right: 20px;
+        border-bottom: 0;
+    }
+}
+.course-information {
+    .course-item {
+        line-height: 20px;
+        color: #8d98a9;
+        font-size: 12px;
+        span{
+            display: inline-block;
+        }
+    }
+    .course-col-border {
+        border-right: 1px solid #ccc;
+        padding-left: 30px;
+    }
+    .course-col-border:last-child {
+        border-right: 0;
+    }
+    .course-col-border:first-child {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,44 @@
+[{
+    "AppId": 130555,
+    "Title": "登录",
+    "NavigationId": 10000,
+    "ParentID": 0,
+    "Url": "/login",
+    "Path": "containers/Login",
+    "Iconurl": "",
+    "CreateTime": "2017-07-14 10:05:05",
+    "ChildNavigations": null,
+    "Level": 1
+}, {
+    "AppId": 130555,
+    "Title": "404",
+    "NavigationId": 10009,
+    "ParentID": 0,
+    "Url": "*",
+    "Path": "components/Page404",
+    "Iconurl": "",
+    "CreateTime": "2017-07-14 10:05:05",
+    "ChildNavigations": null,
+    "Level": 1
+}, {
+    "AppId": 130555,
+    "Title": "中转页面",
+    "NavigationId": 10014,
+    "ParentID": 0,
+    "Url": "/stage",
+    "Path": "containers/Stage",
+    "Iconurl": "",
+    "CreateTime": "2017-08-28 17:06:05",
+    "ChildNavigations": null,
+    "Level": 1
+}, {
+    "AppId": 130555,
+    "Title": "查看课程",
+    "NavigationId": 10015,
+    "ParentID": 0,
+    "Url": "/CourseGroup/view/:groupID",
+    "Path": "components/courseGroupManager/CourseList",
+    "Iconurl": "",
+    "CreateTime": "",
+    "ChildNavigations": null
+}]
